@@ -4,7 +4,9 @@ const port = 3000
 const tasksRouter = require('./routes/tasks')
 const connectDB = require('./db/connect')
 require('dotenv').config()
+
 app.use(express.json()) // JSONデータを受け取るためのミドルウェア
+app.use(express.static('./public')) // 静的ファイルの提供
 
 // ルーティング設計
 app.use('/api/v1/tasks', tasksRouter)

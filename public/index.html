@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoapp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form class="task-form">
+        <h4>todoapp</h4>
+        <div>
+            <input
+                type="text"
+                name="name"
+                class="task-input"
+                placeholder="タスクを入力してください"
+            >
+            <button type="submit" class="btn submit-btn">送信</button>
+        </div>
+    </form>
+
+    <section class="tasks-container">
+        <div class="tasks">
+            <div class="single-task">
+                <h5>
+                    <span><i class="fa-regular fa-circle-check"></i></span>todoタスク
+                </h5>
+                <div class="task-links">
+                    <!-- 編集リンク -->
+                    <a href="#" class="edit-link">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                    <!-- ゴミ箱リンク -->
+                    <button type="button" class="delete-btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
