@@ -28,7 +28,8 @@ const getTask = async (req, res) => {
       return res.status(404).json({ message: `No task with id : ${req.params.id}` })
     }
 
-    res.status(200).json({ task: getTask })
+    res.status(200).json(getTask)
+    // res.status(200).json({ task: getTask })
   } catch (error) {
     res.status(500).json({ message: error })
   }

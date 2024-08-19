@@ -171,18 +171,18 @@ textarea {
     margin-right: 1.5rem;
 }
 
-.single-task .fa-check-circle {
+.single-task .fa-circle-check {
     font-size: 1rem;
     color: var(--green-dark);
-    visibility: hidden;
+    visibility: hidden; /* 非表示 */
 }
 
 .task-completed h5 {
-    text-decoration: line-through;
+    text-decoration: line-through; /* 打ち消し線 */
 }
 
-.task-completed .fa-check-circle {
-    visibility: visible;
+.task-completed .fa-circle-check {
+    visibility: visible; /* 表示 */
 }
 
 /* Task Links */

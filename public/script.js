@@ -17,18 +17,18 @@ const showTasks = async () => {
 
         const allTasks = tasks
             .map((task) => {
-                const { _id, name, description } = task; // 分割代入、最近の書き方
+                const { _id, name, completed } = task; // 分割代入、最近の書き方
                 // console.log(name)
                 // console.log(task.name); この方法もある
 
                 return `
-                  <div class="single-task">
+                  <div class="single-task ${completed && "task-completed"}">
                       <h5>
                           <span><i class="fa-regular fa-circle-check"></i></span>${name}
                       </h5>
                       <div class="task-links">
                           <!-- 編集リンク -->
-                          <a href="#" class="edit-link">
+                          <a href="edit.html?id=${_id}" class="edit-link">
                               <i class="fa-solid fa-pen-to-square"></i>
                           </a>
                           <!-- ゴミ箱リンク -->
